@@ -38,25 +38,26 @@ body {
 /* button */
 .btn {
     position: fixed;
-    left: 20px;
-    bottom: 20px;
+    left: 16px;
+    bottom: 13px;
     z-index: 3;
-    width: 47px;
-    height: 47px;
-    line-height: 40px;
+    width: 46px;
+    height: 46px;
+    line-height: 38px;
     text-align: center;
-    cursor: pointer;
-    border: 3px solid #fff;
+    cursor: default;
+    border: 3px solid #f9f9f9;
     border-radius: 50%;
-    background: #ff4400;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    background-color: #ff4400;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5400), to(#ff4400));
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 }
 .btn.on {
-    background-color: #ccc;
+    background: rgba(204, 204, 204, .7);
 }
 .btn span {
     display: inline-block;
-    font-size: 26px;
+    font-size: 25px;
     color: #fff;
 }
 
