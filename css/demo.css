@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/*
+ * Overview: CSS3 Taobao Mobile taoplus Style
+ * Author: mittya.com
+ */
+
+
+/** Icon font **/
 @font-face {
     font-family: 'iconfont';
     src: url('../fonts/iconfont.eot');
@@ -12,6 +19,8 @@
     font-family: "iconfont";
     font-style: normal;
 }
+
+
 
 /** Reset **/
 html, body, div, span, ul, li, a, button {
@@ -65,14 +74,14 @@ body {
 /* taoplus */
 .taoplus {
     position: fixed;
-    left: 40px;
-    bottom: 50px;
+    left: 32px;
+    bottom: 40px;
     z-index: 2;
     opacity: 0;
     width: 195px;
     height: 195px;
     overflow: hidden;
-    border: 5px solid #adadad;
+    border: 5px solid rgba(51, 51, 51, .1);
     border-radius: 50%;
     pointer-events: none;
 
@@ -85,6 +94,7 @@ body {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+
     -webkit-transform: scale(1);
 }
 
@@ -99,6 +109,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 10;
     margin-left: -2px;
     margin-top: -2px;
 }*/
@@ -109,23 +120,19 @@ body {
     color: #c3c3c3;
 }
 
-.taoplus a:hover {
-    color: #fff;
-}
-
 
 .taoplus li {
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 3;
-    margin-left: -160px;
-    margin-top: -160px;
-    width: 160px;
-    height: 160px;
+    margin-left: -130px;
+    margin-top: -130px;
+    width: 130px;
+    height: 130px;
     overflow: hidden;
-    border-left: 1px solid #f3f3f3;
-    border-right: 1px solid #fff;
+    border-bottom: 1px solid #f3f3f3;
+    border-right: 2px solid #fff;
     background-color: #f6f6f6;
 
     -webkit-transform-origin: 100% 100%;
@@ -152,16 +159,14 @@ body {
 
 .taoplus .nav a {
     position: absolute;
-    right: 50%; 
-    bottom: 50%;
+    right: -90px;
+    bottom: -90px;
     z-index: 3;
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     text-align: center;
-    margin-right: -150px;
-    margin-bottom: -150px;
-    padding-top: 220px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edebeb));
+    padding-top: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
 
     -webkit-transform: skew(-30deg) rotate(-60deg) scale(1);
 }
@@ -174,8 +179,8 @@ body {
 .taoplus .nav span {
     display: inline-block;
     font-size: 26px;
-    margin-right: 12px; /* 暂时没找到问题所在 */
-    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154, 154, 154, 1)), to(rgba(195, 195, 195, .8)));
+    color: #afafaf;
+    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(175, 175, 175, 1)), to(rgba(175, 175, 175, .7)));
 }
 
 .taoplus li:nth-child(1) span {
@@ -197,27 +202,48 @@ body {
     -webkit-transform: rotate(-210deg);
 }
 
+.taoplus .nav a:hover span {
+    color: #fff;
+    -webkit-mask: none;
+}
+
 
 /* home */
 .taoplus .home {
     position: absolute;
-    left: 55px;
-    bottom: 55px;
+    left: 50px;
+    bottom: 50px;
     z-index: 3;
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e6e4e4), to(#fff));
+}
+.taoplus .home a {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
     width: 78px;
     height: 78px;
-    line-height: 78px;
-    font-size: 38px;
-    text-align: center;
-    background-color: #f3f3f3;
+    line-height: 74px;
+    margin-left: -39px;
+    margin-bottom: -38px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    box-shadow: 0 1px 1px rgba(51, 51, 51, .3);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eeefef));
+    z-index: 4;
 }
-.taoplus .home:hover {
+.taoplus .home a:hover {
     background: #ff4400;
 }
 .taoplus .home span {
-    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154, 154, 154, .8)), to(rgba(195, 195, 195, .6)));
+    font-size: 36px;
+    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154, 154, 154, .6)), to(rgba(195, 195, 195, .3)));
+}
+.taoplus .home a:hover span {
+    color: #fff;
+    -webkit-mask: none;
 }
 
 
