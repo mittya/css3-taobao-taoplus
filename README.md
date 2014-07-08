@@ -10,4 +10,4 @@ CSS3实现[淘宝触屏版](http://m.taobao.com/)左下角导航，暂时仅支�
 
 ### 手机预览
 
-![QR Code](http://mittya.github.io/css3-taobao-taoplus/imgs/qr.png)
+![QR Code](http://mittya.github.io/css3-taobao-taoplus/res/qr.png)
