@@ -1,6 +1,5 @@
 @import "base"
 
-/** Tao + **/
 
 /* button */
 .btn
@@ -17,15 +16,15 @@
   border-radius: 50%
   background-color: #ff4400
   background: -webkit-gradient(linear, left top, left bottom, from(#ff5400), to(#ff4400))
-  box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+  box-shadow: 0 0 3px rgba(0,0,0,.3)
 
-.btn.on
-  background: rgba(204, 204, 204, .7)
+  &.on
+    background: rgba(204,204,204,.7)
 
-.btn span
-  display: inline-block
-  font-size: 25px
-  color: #fff
+  span
+    display: inline-block
+    font-size: 25px
+    color: #fff
 
 
 /* taoplus */
@@ -38,157 +37,125 @@
   width: 195px
   height: 195px
   overflow: hidden
-  border: 5px solid rgba(51, 51, 51, .1)
+  border: 5px solid rgba(51,51,51,.1)
   border-radius: 50%
   pointer-events: none
   -webkit-transform-origin: -10px 210px
   -webkit-transform: scale(.1)
   -webkit-transition: all .3s
 
-.taoplus.on
-  visibility: visible
-  opacity: 1
-  pointer-events: auto
-  -webkit-transform: scale(1)
+  &.on
+    visibility: visible
+    opacity: 1
+    pointer-events: auto
+    -webkit-transform: scale(1)
 
+  a
+    display: block
+    text-decoration: none
+    color: #c3c3c3
 
-/* 圆心 */
-/*
-.taoplus:after
-  content: ""
-  display: block
-  width: 4px
-  height: 4px
-  border-radius: 50%
-  background-color: red
-  position: absolute
-  top: 50%
-  left: 50%
-  z-index: 10
-  margin-left: -2px
-  margin-top: -2px
-*/
+  li
+    position: absolute
+    left: 50%
+    top: 50%
+    z-index: 3
+    margin-left: -130px
+    margin-top: -130px
+    width: 130px
+    height: 130px
+    overflow: hidden
+    border-bottom: 1px solid #f3f3f3
+    border-right: 2px solid #fff
+    background-color: #f6f6f6
+    -webkit-transform-origin: 100% 100%
 
+    &:nth-child(1)
+      -webkit-transform: rotate(-30deg) skew(30deg)
+    &:nth-child(2)
+      -webkit-transform: rotate(30deg) skew(30deg)
+    &:nth-child(3)
+      -webkit-transform: rotate(90deg) skew(30deg)
+    &:nth-child(4)
+      -webkit-transform: rotate(150deg) skew(30deg)
+    &:nth-child(5)
+      -webkit-transform: rotate(210deg) skew(30deg)
+    &:nth-child(6)
+      -webkit-transform: rotate(270deg) skew(30deg)
 
-.taoplus a
-  display: block
-  text-decoration: none
-  color: #c3c3c3
+  .nav a
+    position: absolute
+    right: -90px
+    bottom: -90px
+    z-index: 3
+    width: 185px
+    height: 185px
+    text-align: center
+    padding-top: 15px
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc))
+    -webkit-transform: skew(-30deg) rotate(-60deg) scale(1)
 
-.taoplus li
-  position: absolute
-  left: 50%
-  top: 50%
-  z-index: 3
-  margin-left: -130px
-  margin-top: -130px
-  width: 130px
-  height: 130px
-  overflow: hidden
-  border-bottom: 1px solid #f3f3f3
-  border-right: 2px solid #fff
-  background-color: #f6f6f6
-  -webkit-transform-origin: 100% 100%
+    &:hover
+      background: #ff4400
 
-.taoplus li:nth-child(1)
-  -webkit-transform: rotate(-30deg) skew(30deg)
+  .nav span
+    display: inline-block
+    font-size: 26px
+    color: #afafaf
+    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(175,175,175,1)), to(rgba(175,175,175,.7)))
 
-.taoplus li:nth-child(2)
-  -webkit-transform: rotate(30deg) skew(30deg)
+  li:nth-child(1) span
+    -webkit-transform: rotate(90deg)
+  li:nth-child(2) span
+    -webkit-transform: rotate(30deg)
+  li:nth-child(3) span
+    -webkit-transform: rotate(-30deg)
+  li:nth-child(4) span
+    -webkit-transform: rotate(-90deg)
+  li:nth-child(5) span
+    -webkit-transform: rotate(-150deg)
+  li:nth-child(6) span
+    -webkit-transform: rotate(-210deg)
 
-.taoplus li:nth-child(3)
-  -webkit-transform: rotate(90deg) skew(30deg)
+  .nav a:hover span
+    color: #fff
+    -webkit-mask: none
 
-.taoplus li:nth-child(4)
-  -webkit-transform: rotate(150deg) skew(30deg)
+  .home
+    position: absolute
+    left: 50px
+    bottom: 50px
+    z-index: 3
+    width: 88px
+    height: 88px
+    text-align: center
+    border-radius: 50%
+    background: -webkit-gradient(linear, left top, left bottom, from(#e6e4e4), to(#fff))
 
-.taoplus li:nth-child(5)
-  -webkit-transform: rotate(210deg) skew(30deg)
+    a
+      position: absolute
+      left: 50%
+      bottom: 50%
+      z-index: 4
+      width: 78px
+      height: 78px
+      line-height: 74px
+      margin-left: -39px
+      margin-bottom: -38px
+      border-radius: 50%
+      box-shadow: 0 1px 1px rgba(51,51,51,.3)
+      background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eeefef))
 
-.taoplus li:nth-child(6)
-  -webkit-transform: rotate(270deg) skew(30deg)
+      &:hover
+        background: #ff4400
 
+    span
+      font-size: 36px
+      -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154,154,154,.6)), to(rgba(195,195,195,.3)))
 
-.taoplus .nav a
-  position: absolute
-  right: -90px
-  bottom: -90px
-  z-index: 3
-  width: 180px
-  height: 180px
-  text-align: center
-  padding-top: 15px
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc))
-  -webkit-transform: skew(-30deg) rotate(-60deg) scale(1)
-
-.taoplus .nav a:hover
-  background: #ff4400
-
-.taoplus .nav span
-  display: inline-block
-  font-size: 26px
-  color: #afafaf
-  -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(175, 175, 175, 1)), to(rgba(175, 175, 175, .7)))
-
-.taoplus li:nth-child(1) span
-  -webkit-transform: rotate(90deg)
-
-.taoplus li:nth-child(2) span
-  -webkit-transform: rotate(30deg)
-
-.taoplus li:nth-child(3) span
-  -webkit-transform: rotate(-30deg)
-
-.taoplus li:nth-child(4) span
-  -webkit-transform: rotate(-90deg)
-
-.taoplus li:nth-child(5) span
-  -webkit-transform: rotate(-150deg)
-
-.taoplus li:nth-child(6) span
-  -webkit-transform: rotate(-210deg)
-
-.taoplus .nav a:hover span
-  color: #fff
-  -webkit-mask: none
-
-
-/* home */
-.taoplus .home
-  position: absolute
-  left: 50px
-  bottom: 50px
-  z-index: 3
-  width: 88px
-  height: 88px
-  text-align: center
-  border-radius: 50%
-  background: -webkit-gradient(linear, left top, left bottom, from(#e6e4e4), to(#fff))
-
-.taoplus .home a
-  position: absolute
-  left: 50%
-  bottom: 50%
-  width: 78px
-  height: 78px
-  line-height: 74px
-  margin-left: -39px
-  margin-bottom: -38px
-  border-radius: 50%
-  box-shadow: 0 1px 1px rgba(51, 51, 51, .3)
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eeefef))
-  z-index: 4
-
-.taoplus .home a:hover
-  background: #ff4400
-
-.taoplus .home span
-  font-size: 36px
-  -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154, 154, 154, .6)), to(rgba(195, 195, 195, .3)))
-
-.taoplus .home a:hover span
-  color: #fff
-  -webkit-mask: none
+    a:hover span
+      color: #fff
+      -webkit-mask: none
 
 
 /* overlay */
@@ -203,9 +170,25 @@
   right: 0
   bottom: 0
   z-index: 1
-  background-color: rgba(0, 0, 0, .2)
+  background-color: rgba(0,0,0,.2)
   -webkit-transition: opacity .3s ease
 
-.overlay.on
-  visibility: visible
-  opacity: 1
+  &.on
+    visibility: visible
+    opacity: 1
+
+
+/* 测试圆心
+.taoplus:after
+  content: ''
+  display: block
+  width: 4px
+  height: 4px
+  border-radius: 50%
+  background-color: red
+  position: absolute
+  top: 50%
+  left: 50%
+  z-index: 10
+  margin-left: -2px
+  margin-top: -2px */

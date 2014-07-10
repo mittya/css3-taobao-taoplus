@@ -169,8 +169,8 @@ body {
   right: -90px;
   bottom: -90px;
   z-index: 3;
-  width: 180px;
-  height: 180px;
+  width: 185px;
+  height: 185px;
   text-align: center;
   padding-top: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
