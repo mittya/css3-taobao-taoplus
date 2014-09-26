@@ -9,10 +9,10 @@
 
 ## How to use
 
-    cd css3-taobao-taoplus
+    $ cd css3-taobao-taoplus
 
-    npm install
+    $ npm install
 
-    gulp
+    $ gulp
 
 Open your browser and go to http://127.0.0.1:8000
