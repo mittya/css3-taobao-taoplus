@@ -6,6 +6,12 @@
 ![QR Code](http://mittya.github.io/css3-taobao-taoplus/res/qr.png)
 
 
+## Requirements
+
++ node
++ gulp
++ [LiveReload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+
 
 ## How to use
 
