@@ -14,7 +14,6 @@
 
 + node
 + gulp
-+ [LiveReload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
 ```bash
 $ cd css3-taobao-taoplus
