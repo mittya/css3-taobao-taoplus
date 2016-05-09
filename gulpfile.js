@@ -3,7 +3,8 @@ var watch = require('gulp-watch');
 var stylus = require('gulp-stylus');
 var coffee = require('gulp-coffee');
 var connect = require('gulp-connect');
-var livereload = require("gulp-livereload");
+var livereload = require('gulp-livereload');
+var autoprefixer = require('autoprefixer-stylus');
 
 
 gulp.task('connect', function() {
@@ -17,7 +18,7 @@ gulp.task('connect', function() {
 
 gulp.task('stylus', function() {
   gulp.src('src/stylus/taoplus.styl')
-    .pipe(stylus())
+    .pipe(stylus({ use: [autoprefixer()] }))
     .pipe(gulp.dest('dist/css'))
     .pipe(connect.reload());
 });

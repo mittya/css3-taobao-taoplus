@@ -49,7 +49,8 @@ body {
   border: 3px solid #f9f9f9;
   border-radius: 50%;
   background-color: #f40;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff5400), to(#f40));
+  background: -webkit-linear-gradient(#ff5400, #f40);
+  background: linear-gradient(#ff5400, #f40);
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 .btn.on {
@@ -74,14 +75,18 @@ body {
   border-radius: 50%;
   pointer-events: none;
   -webkit-transform-origin: -10px 210px;
+          transform-origin: -10px 210px;
   -webkit-transform: scale(0.1);
+          transform: scale(0.1);
   -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .taoplus.on {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .taoplus a {
   display: block;
@@ -102,24 +107,31 @@ body {
   border-right: 2px solid #fff;
   background-color: #f6f6f6;
   -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 .taoplus li:nth-child(1) {
   -webkit-transform: rotate(-30deg) skew(30deg);
+          transform: rotate(-30deg) skew(30deg);
 }
 .taoplus li:nth-child(2) {
   -webkit-transform: rotate(30deg) skew(30deg);
+          transform: rotate(30deg) skew(30deg);
 }
 .taoplus li:nth-child(3) {
   -webkit-transform: rotate(90deg) skew(30deg);
+          transform: rotate(90deg) skew(30deg);
 }
 .taoplus li:nth-child(4) {
   -webkit-transform: rotate(150deg) skew(30deg);
+          transform: rotate(150deg) skew(30deg);
 }
 .taoplus li:nth-child(5) {
   -webkit-transform: rotate(210deg) skew(30deg);
+          transform: rotate(210deg) skew(30deg);
 }
 .taoplus li:nth-child(6) {
   -webkit-transform: rotate(270deg) skew(30deg);
+          transform: rotate(270deg) skew(30deg);
 }
 .taoplus .nav a {
   position: absolute;
@@ -130,8 +142,10 @@ body {
   height: 185px;
   text-align: center;
   padding-top: 15px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+  background: -webkit-linear-gradient(#fff, #ccc);
+  background: linear-gradient(#fff, #ccc);
   -webkit-transform: skew(-30deg) rotate(-60deg) scale(1);
+          transform: skew(-30deg) rotate(-60deg) scale(1);
 }
 .taoplus .nav a:hover {
   background: #f40;
@@ -140,29 +154,37 @@ body {
   display: inline-block;
   font-size: 26px;
   color: #afafaf;
-  -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afafaf), to(rgba(175,175,175,0.7)));
+  -webkit-mask: -webkit-linear-gradient(#afafaf, rgba(175,175,175,0.7));
+          mask: linear-gradient(#afafaf, rgba(175,175,175,0.7));
 }
 .taoplus li:nth-child(1) span {
   -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .taoplus li:nth-child(2) span {
   -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 .taoplus li:nth-child(3) span {
   -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 .taoplus li:nth-child(4) span {
   -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .taoplus li:nth-child(5) span {
   -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
 }
 .taoplus li:nth-child(6) span {
   -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
 }
 .taoplus .nav a:hover span {
   color: #fff;
   -webkit-mask: none;
+          mask: none;
 }
 .taoplus .home {
   position: absolute;
@@ -173,7 +195,8 @@ body {
   height: 88px;
   text-align: center;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e6e4e4), to(#fff));
+  background: -webkit-linear-gradient(#e6e4e4, #fff);
+  background: linear-gradient(#e6e4e4, #fff);
 }
 .taoplus .home a {
   position: absolute;
@@ -187,18 +210,21 @@ body {
   margin-bottom: -38px;
   border-radius: 50%;
   box-shadow: 0 1px 1px rgba(51,51,51,0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eeefef));
+  background: -webkit-linear-gradient(#fcfdfd, #eeefef);
+  background: linear-gradient(#fcfdfd, #eeefef);
 }
 .taoplus .home a:hover {
   background: #f40;
 }
 .taoplus .home span {
   font-size: 36px;
-  -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154,154,154,0.6)), to(rgba(195,195,195,0.3)));
+  -webkit-mask: -webkit-linear-gradient(rgba(154,154,154,0.6), rgba(195,195,195,0.3));
+          mask: linear-gradient(rgba(154,154,154,0.6), rgba(195,195,195,0.3));
 }
 .taoplus .home a:hover span {
   color: #fff;
   -webkit-mask: none;
+          mask: none;
 }
 /* overlay */
 .overlay {
@@ -214,6 +240,7 @@ body {
   z-index: 1;
   background-color: rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .overlay.on {
   visibility: visible;

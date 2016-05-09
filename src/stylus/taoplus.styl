@@ -15,7 +15,7 @@
   border: 3px solid #f9f9f9
   border-radius: 50%
   background-color: #ff4400
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff5400), to(#ff4400))
+  background: linear-gradient(#ff5400, #ff4400)
   box-shadow: 0 0 3px rgba(0,0,0,.3)
 
   &.on
@@ -40,15 +40,15 @@
   border: 5px solid rgba(51,51,51,.1)
   border-radius: 50%
   pointer-events: none
-  -webkit-transform-origin: -10px 210px
-  -webkit-transform: scale(.1)
-  -webkit-transition: all .3s
+  transform-origin: -10px 210px
+  transform: scale(.1)
+  transition: all .3s
 
   &.on
     visibility: visible
     opacity: 1
     pointer-events: auto
-    -webkit-transform: scale(1)
+    transform: scale(1)
 
   a
     display: block
@@ -68,20 +68,20 @@
     border-bottom: 1px solid #f3f3f3
     border-right: 2px solid #fff
     background-color: #f6f6f6
-    -webkit-transform-origin: 100% 100%
+    transform-origin: 100% 100%
 
     &:nth-child(1)
-      -webkit-transform: rotate(-30deg) skew(30deg)
+      transform: rotate(-30deg) skew(30deg)
     &:nth-child(2)
-      -webkit-transform: rotate(30deg) skew(30deg)
+      transform: rotate(30deg) skew(30deg)
     &:nth-child(3)
-      -webkit-transform: rotate(90deg) skew(30deg)
+      transform: rotate(90deg) skew(30deg)
     &:nth-child(4)
-      -webkit-transform: rotate(150deg) skew(30deg)
+      transform: rotate(150deg) skew(30deg)
     &:nth-child(5)
-      -webkit-transform: rotate(210deg) skew(30deg)
+      transform: rotate(210deg) skew(30deg)
     &:nth-child(6)
-      -webkit-transform: rotate(270deg) skew(30deg)
+      transform: rotate(270deg) skew(30deg)
 
   .nav a
     position: absolute
@@ -92,8 +92,8 @@
     height: 185px
     text-align: center
     padding-top: 15px
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc))
-    -webkit-transform: skew(-30deg) rotate(-60deg) scale(1)
+    background: linear-gradient(#fff, #ccc)
+    transform: skew(-30deg) rotate(-60deg) scale(1)
 
     &:hover
       background: #ff4400
@@ -102,24 +102,24 @@
     display: inline-block
     font-size: 26px
     color: #afafaf
-    -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(175,175,175,1)), to(rgba(175,175,175,.7)))
+    mask: linear-gradient(rgba(175,175,175,1), rgba(175,175,175,.7))
 
   li:nth-child(1) span
-    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
   li:nth-child(2) span
-    -webkit-transform: rotate(30deg)
+    transform: rotate(30deg)
   li:nth-child(3) span
-    -webkit-transform: rotate(-30deg)
+    transform: rotate(-30deg)
   li:nth-child(4) span
-    -webkit-transform: rotate(-90deg)
+    transform: rotate(-90deg)
   li:nth-child(5) span
-    -webkit-transform: rotate(-150deg)
+    transform: rotate(-150deg)
   li:nth-child(6) span
-    -webkit-transform: rotate(-210deg)
+    transform: rotate(-210deg)
 
   .nav a:hover span
     color: #fff
-    -webkit-mask: none
+    mask: none
 
   .home
     position: absolute
@@ -130,7 +130,7 @@
     height: 88px
     text-align: center
     border-radius: 50%
-    background: -webkit-gradient(linear, left top, left bottom, from(#e6e4e4), to(#fff))
+    background: linear-gradient(#e6e4e4, #fff)
 
     a
       position: absolute
@@ -144,18 +144,18 @@
       margin-bottom: -38px
       border-radius: 50%
       box-shadow: 0 1px 1px rgba(51,51,51,.3)
-      background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eeefef))
+      background: linear-gradient(#fcfdfd, #eeefef)
 
       &:hover
         background: #ff4400
 
     span
       font-size: 36px
-      -webkit-mask: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(154,154,154,.6)), to(rgba(195,195,195,.3)))
+      mask: linear-gradient(rgba(154,154,154,.6), rgba(195,195,195,.3))
 
     a:hover span
       color: #fff
-      -webkit-mask: none
+      mask: none
 
 
 /* overlay */
@@ -171,7 +171,7 @@
   bottom: 0
   z-index: 1
   background-color: rgba(0,0,0,.2)
-  -webkit-transition: opacity .3s ease
+  transition: opacity .3s ease
 
   &.on
     visibility: visible
