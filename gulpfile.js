@@ -9,7 +9,7 @@ var autoprefixer = require('autoprefixer-stylus');
 
 gulp.task('connect', function() {
   connect.server({
-    root: '',
+    root: 'dist/',
     port: 8000,
     livereload: true
   });
@@ -17,7 +17,7 @@ gulp.task('connect', function() {
 
 
 gulp.task('stylus', function() {
-  gulp.src('src/stylus/taoplus.styl')
+  gulp.src('src/styl/taoplus.styl')
     .pipe(stylus({ use: [autoprefixer()] }))
     .pipe(gulp.dest('dist/css'))
     .pipe(connect.reload());
@@ -33,19 +33,22 @@ gulp.task('coffee', function() {
 
 
 gulp.task('html', function () {
-  gulp.src('index.html')
+  gulp.src('src/index.html')
     .pipe(connect.reload());
 });
 
 
 gulp.task('watch', function() {
-  gulp.watch('index.html', ['html']);
-  gulp.watch('src/stylus/taoplus.styl', ['stylus']);
+  gulp.watch('src/index.html', ['html']);
+  gulp.watch('src/styl/taoplus.styl', ['stylus']);
   gulp.watch('src/coffee/taoplus.coffee', ['coffee']);
 });
 
 
 gulp.task('copy', function() {
+  gulp.src('src/index.html')
+    .pipe(gulp.dest('dist/'));
+
   gulp.src('src/fonts/*')
     .pipe(gulp.dest('dist/fonts/'));
 });
