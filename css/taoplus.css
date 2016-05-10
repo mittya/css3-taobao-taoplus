@@ -1,0 +1,273 @@
+/*
+ * Overview: CSS3 Taobao Mobile taoplus Style
+ * Author: mittya
+ * Code: https://github.com/mittya/css3-taobao-taoplus
+ */
+html,
+body,
+div,
+span,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a,
+button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body {
+  background-color: #f1f1f1;
+}
+.fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format('embedded-opentype'), url("../fonts/iconfont.woff") format('woff'), url("../fonts/iconfont.ttf") format('truetype'), url("../fonts/iconfont.svg#uxiconfont") format('svg');
+}
+.iconfont {
+  font-family: 'iconfont';
+  font-style: normal;
+}
+/* Tao button */
+.btn {
+  position: fixed;
+  left: 16px;
+  bottom: 13px;
+  z-index: 3;
+  width: 46px;
+  height: 46px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid #f9f9f9;
+  border-radius: 50%;
+  background-color: #f40;
+  background: -webkit-linear-gradient(#ff5400, #f40);
+  background: linear-gradient(#ff5400, #f40);
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.btn.on {
+  background: rgba(204,204,204,0.7);
+}
+.btn span {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+}
+/* Taoplus */
+.taoplus {
+  position: fixed;
+  left: 32px;
+  bottom: 40px;
+  z-index: 2;
+  opacity: 0;
+  width: 195px;
+  height: 195px;
+  overflow: hidden;
+  border: 5px solid rgba(51,51,51,0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transform-origin: -10px 210px;
+          transform-origin: -10px 210px;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.taoplus.on {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.taoplus a {
+  display: block;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+.taoplus li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  margin-left: -130px;
+  margin-top: -130px;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-bottom: 1px solid #f3f3f3;
+  border-right: 2px solid #fff;
+  background-color: #f6f6f6;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.taoplus li:nth-child(1) {
+  -webkit-transform: rotate(-30deg) skew(30deg);
+          transform: rotate(-30deg) skew(30deg);
+}
+.taoplus li:nth-child(2) {
+  -webkit-transform: rotate(30deg) skew(30deg);
+          transform: rotate(30deg) skew(30deg);
+}
+.taoplus li:nth-child(3) {
+  -webkit-transform: rotate(90deg) skew(30deg);
+          transform: rotate(90deg) skew(30deg);
+}
+.taoplus li:nth-child(4) {
+  -webkit-transform: rotate(150deg) skew(30deg);
+          transform: rotate(150deg) skew(30deg);
+}
+.taoplus li:nth-child(5) {
+  -webkit-transform: rotate(210deg) skew(30deg);
+          transform: rotate(210deg) skew(30deg);
+}
+.taoplus li:nth-child(6) {
+  -webkit-transform: rotate(270deg) skew(30deg);
+          transform: rotate(270deg) skew(30deg);
+}
+.taoplus .nav a {
+  position: absolute;
+  right: -90px;
+  bottom: -90px;
+  z-index: 3;
+  width: 185px;
+  height: 185px;
+  text-align: center;
+  padding-top: 15px;
+  background: -webkit-linear-gradient(#fff, #ccc);
+  background: linear-gradient(#fff, #ccc);
+  -webkit-transform: skew(-30deg) rotate(-60deg) scale(1);
+          transform: skew(-30deg) rotate(-60deg) scale(1);
+}
+.taoplus .nav a:hover {
+  background: #f40;
+}
+.taoplus .nav span {
+  display: inline-block;
+  font-size: 26px;
+  color: #afafaf;
+  -webkit-mask: -webkit-linear-gradient(#afafaf, rgba(175,175,175,0.7));
+          mask: linear-gradient(#afafaf, rgba(175,175,175,0.7));
+}
+.taoplus li:nth-child(1) span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.taoplus li:nth-child(2) span {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.taoplus li:nth-child(3) span {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+.taoplus li:nth-child(4) span {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.taoplus li:nth-child(5) span {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+}
+.taoplus li:nth-child(6) span {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+}
+.taoplus .nav a:hover span {
+  color: #fff;
+  -webkit-mask: none;
+          mask: none;
+}
+.taoplus .home {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  z-index: 3;
+  width: 88px;
+  height: 88px;
+  text-align: center;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(#e6e4e4, #fff);
+  background: linear-gradient(#e6e4e4, #fff);
+}
+.taoplus .home a {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  z-index: 4;
+  width: 78px;
+  height: 78px;
+  line-height: 74px;
+  margin-left: -39px;
+  margin-bottom: -38px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(51,51,51,0.3);
+  background: -webkit-linear-gradient(#fcfdfd, #eeefef);
+  background: linear-gradient(#fcfdfd, #eeefef);
+}
+.taoplus .home a:hover {
+  background: #f40;
+}
+.taoplus .home span {
+  font-size: 36px;
+  -webkit-mask: -webkit-linear-gradient(rgba(154,154,154,0.6), rgba(195,195,195,0.3));
+          mask: linear-gradient(rgba(154,154,154,0.6), rgba(195,195,195,0.3));
+}
+.taoplus .home a:hover span {
+  color: #fff;
+  -webkit-mask: none;
+          mask: none;
+}
+/* Overlay */
+.overlay {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.2);
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.overlay.on {
+  visibility: visible;
+  opacity: 1;
+}
+/* Center of a circle
+.taoplus:after
+  content: ''
+  display: block
+  width: 4px
+  height: 4px
+  border-radius: 50%
+  background-color: red
+  position: absolute
+  top: 50%
+  left: 50%
+  z-index: 10
+  margin-left: -2px
+  margin-top: -2px */
