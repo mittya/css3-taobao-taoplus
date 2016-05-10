@@ -1,13 +1,14 @@
 {
   "name": "css3-taobao-taoplus",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "CSS3 Taobao Mobile taoplus Style",
   "repository": {
     "type": "git",
     "url": "https://github.com/mittya/css3-taobao-taoplus.git"
   },
   "scripts": {
-    "start": "./node_modules/.bin/gulp"
+    "start": "./node_modules/.bin/gulp",
+    "deploy": "./node_modules/.bin/gulp deploy"
   },
   "author": "mittya",
   "license": "MIT",
@@ -16,12 +17,13 @@
   },
   "homepage": "http://mittya.github.io/css3-taobao-taoplus",
   "devDependencies": {
+    "autoprefixer-stylus": "^0.9.3",
     "gulp": "^3.8.6",
     "gulp-coffee": "^2.1.1",
     "gulp-connect": "^2.0.6",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-livereload": "^2.1.1",
     "gulp-stylus": "^1.0.5",
-    "gulp-watch": "^1.0.4",
-    "autoprefixer-stylus": "^0.9.3"
+    "gulp-watch": "^1.0.4"
   }
 }

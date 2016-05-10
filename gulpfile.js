@@ -3,6 +3,7 @@ var watch = require('gulp-watch');
 var stylus = require('gulp-stylus');
 var coffee = require('gulp-coffee');
 var connect = require('gulp-connect');
+var ghpages = require('gulp-gh-pages');
 var livereload = require('gulp-livereload');
 var autoprefixer = require('autoprefixer-stylus');
 
@@ -51,6 +52,12 @@ gulp.task('copy', function() {
 
   gulp.src('src/fonts/*')
     .pipe(gulp.dest('dist/fonts/'));
+});
+
+
+gulp.task('deploy', function() {
+  gulp.src('dist/**/*')
+    .pipe(ghpages());
 });
 
 
