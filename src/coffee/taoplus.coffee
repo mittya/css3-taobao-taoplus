@@ -1,4 +1,4 @@
-window.onload = ->
+window.addEventListener 'load', ->
 
   btn = document.querySelector('#btn')
   taoPlus = document.querySelector('#taoPlus')
@@ -6,6 +6,9 @@ window.onload = ->
   links = document.querySelectorAll('.nav a')
   homelink = document.querySelector('.home a')
 
+
+  # For older mobile browser and weixin browser
+  FastClick.attach document.body
 
   hasClass = (element, name) ->
     reg = new RegExp('\\b' + name + '\\b')

@@ -53,6 +53,9 @@ gulp.task('copy', function() {
 
   gulp.src('src/fonts/*')
     .pipe(gulp.dest('dist/fonts/'));
+
+  gulp.src('node_modules/fastclick/lib/fastclick.js')
+    .pipe(gulp.dest('dist/js/'));
 });
 
 
