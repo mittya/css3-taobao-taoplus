@@ -33,7 +33,7 @@ gulp.task('coffee', function() {
 });
 
 
-gulp.task('html', function () {
+gulp.task('html', ['copy'], function () {
   gulp.src('src/index.html')
     .pipe(connect.reload());
 });
@@ -41,7 +41,7 @@ gulp.task('html', function () {
 
 gulp.task('watch', function() {
   gulp.watch('src/index.html', ['html']);
-  gulp.watch('src/styl/taoplus.styl', ['stylus']);
+  gulp.watch('src/styl/*.styl', ['stylus']);
   gulp.watch('src/coffee/taoplus.coffee', ['coffee']);
 });
 
