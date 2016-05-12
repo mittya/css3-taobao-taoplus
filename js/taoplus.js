@@ -1,11 +1,12 @@
 (function() {
-  window.onload = function() {
+  window.addEventListener('load', function() {
     var addClass, btn, hasClass, homelink, i, len, link, linkEvent, links, overlay, removeActive, removeClass, taoPlus, toggleClass;
     btn = document.querySelector('#btn');
     taoPlus = document.querySelector('#taoPlus');
     overlay = document.querySelector('#overlay');
     links = document.querySelectorAll('.nav a');
     homelink = document.querySelector('.home a');
+    FastClick.attach(document.body);
     hasClass = function(element, name) {
       var reg;
       reg = new RegExp('\\b' + name + '\\b');
@@ -54,6 +55,6 @@
       linkEvent(link);
     }
     linkEvent(homelink);
-  };
+  });
 
 }).call(this);
